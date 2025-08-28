@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-28 10:42:42.692532",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_u48d",
+  "merchant",
+  "campaign_source",
+  "utm_params",
+  "first_touch_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_u48d",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "merchant",
+   "fieldtype": "Link",
+   "label": "Merchant",
+   "options": "Merchant"
+  },
+  {
+   "fieldname": "campaign_source",
+   "fieldtype": "Select",
+   "label": "Campaign Source"
+  },
+  {
+   "fieldname": "utm_params",
+   "fieldtype": "Small Text",
+   "label": "UTM Params"
+  },
+  {
+   "fieldname": "first_touch_order",
+   "fieldtype": "Link",
+   "label": "First Touch Order",
+   "options": "Sales Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-28 10:45:34.620997",
+ "modified_by": "Administrator",
+ "module": "E Commerce",
+ "name": "Marketing Attribution",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

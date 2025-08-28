@@ -1,7 +1,7 @@
 app_name = "e_commerce"
 app_title = "E Commerce"
 app_publisher = "Ayush Patel"
-app_description = "This is a e-commerce app like roposo clout."
+app_description = "This is a dropshipping e-commerce app like roposo clout."
 app_email = "ayush@gmail.com"
 app_license = "mit"
 

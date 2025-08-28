@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-27 15:56:11.968463",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_avnr",
+  "merchant_name",
+  "user",
+  "business_type",
+  "gstin",
+  "pan",
+  "bank_account_name",
+  "bank_account_no",
+  "ifsc",
+  "upi_vpa",
+  "commission_model",
+  "default_price_list",
+  "status",
+  "merchant_address",
+  "kyc_docs"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_avnr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "merchant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Merchant Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Select",
+   "label": "Business Type",
+   "options": "IndividualProprietor\nLLP\nPvt Ltd"
+  },
+  {
+   "fieldname": "gstin",
+   "fieldtype": "Data",
+   "label": "GST In"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN"
+  },
+  {
+   "fieldname": "bank_account_name",
+   "fieldtype": "Data",
+   "label": "Bank Account Name"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No"
+  },
+  {
+   "fieldname": "ifsc",
+   "fieldtype": "Data",
+   "label": "IFSC"
+  },
+  {
+   "fieldname": "upi_vpa",
+   "fieldtype": "Data",
+   "label": "UPI VPA"
+  },
+  {
+   "fieldname": "commission_model",
+   "fieldtype": "Link",
+   "label": "Commission Model",
+   "options": "Commission Rule"
+  },
+  {
+   "fieldname": "default_price_list",
+   "fieldtype": "Link",
+   "label": "Default Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status"
+  },
+  {
+   "fieldname": "merchant_address",
+   "fieldtype": "Table",
+   "label": "Merchant Address",
+   "options": "Merchant Address"
+  },
+  {
+   "fieldname": "kyc_docs",
+   "fieldtype": "Table",
+   "label": "KYC Docs",
+   "options": "KYC Document"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-27 16:22:36.126427",
+ "modified_by": "Administrator",
+ "module": "E Commerce",
+ "name": "Merchant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

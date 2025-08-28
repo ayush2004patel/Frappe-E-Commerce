@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-27 16:43:59.184459",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_4xvv",
+  "sales_order",
+  "supplier",
+  "purchase_order",
+  "courier_partner",
+  "tracking_id",
+  "cod_flag",
+  "status",
+  "shipment_tracking_event"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_4xvv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "courier_partner",
+   "fieldtype": "Data",
+   "label": "Courier Partner"
+  },
+  {
+   "fieldname": "tracking_id",
+   "fieldtype": "Data",
+   "label": "Tracking ID"
+  },
+  {
+   "default": "0",
+   "fieldname": "cod_flag",
+   "fieldtype": "Check",
+   "label": "COD Flag"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Awaiting PO\nDispatched\nIn-Transit\nOut for Delivery\nDelivered\nRTO\nLost"
+  },
+  {
+   "fieldname": "shipment_tracking_event",
+   "fieldtype": "Table",
+   "label": "Shipment Tracking Event",
+   "options": "Shipment Tracking Event"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-27 16:58:11.427820",
+ "modified_by": "Administrator",
+ "module": "E Commerce",
+ "name": "Dropship Order Route",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
